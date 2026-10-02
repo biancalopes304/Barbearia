@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBEARIA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Sua Barbearia</h1>
+    </header>
+
+    <section>
+        <a href="#">
+            <img src="img/logo.png" alt="Logo da barbearia" id="logo">
+        </a>
+        <div id="formulario">
+            <h1>Agendar Horário</h1>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+
+            <label for="data">Data</label>
+            <input type="date" id="data">
+
+            <label for="horario">Horário</label>
+            <input type="time" id="horario">
+
+            <button id="agendar" onclick="agendar()">Agendar</button>
+        </div>
+
+        <div id="horarioClientes">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sua BARBEARIA</p>
+        <p>Agende seu horário com facilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

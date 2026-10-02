@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-image: url("img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    min-height: 100px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     background-color: rgba(0, 0, 0, 0.7);
+}
+
+#logo {
+    width: 400px;
+    max-width: 90%;
+
+    display: block;
+    margin: 30px auto;
+
+    border-radius: 20px;
+}
+
+/* FORMULÁRIO */
+
+#formulario {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 50px 30px;
+    gap: 12px;
+
+    background-color: black;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(71, 6, 133, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 30px auto;
+}
+
+#formulario input {
+    width: 100%;
+    max-width: 300px;
+
+    height: 35px;
+
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+/* LISTA DE AGENDAMENTOS */
+
+#horarioClientes {
+    width: 90%;
+    max-width: 550px;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border-radius: 20px;
+}
+
+#horarioClientes > div {
+    width: 100%;
+    padding: 25px;
+
+    background-color: black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    box-shadow: 0 10px 30px rgba(71, 6, 133, 0.7);
+
+    font-size: 20px;
+}
+
+/* BOTÃO */
+
+#agendar {
+    margin: 20px;
+
+    background-color: rgba(105, 50, 150, 0.541);
+    border-radius: 8px;
+
+    height: 30px;
+    width: 90px;
+
+    border: none;
+
+    transition: 0.3s;
+    color: white;
+}
+
+#agendar:hover {
+    height: 33px;
+    background-color: rgb(132, 62, 173);
+}
+
+body {
+    min-height: 100vh;
+
+    background-image: url("img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+}
+footer {
+    padding: 25px;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 80px;
+    }
+
+    #logo {
+        width: 300px;
+    }
+
+    #formulario {
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+    #formulario input {
+        width: 100%;
+    }
+
+    #horarioClientes {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #horarioClientes > div {
+        padding: 30px 15px;
+    }
+}
